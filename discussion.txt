@@ -1,0 +1,12 @@
+1. The Strategy pattern plugs in as a parameter when creating a MealPrepTemplate.
+To add a new seasoning strategy, like HerbButterSeasoning, you would create a new class that
+implements ISeasoningStrategy, and then add it to the switch statement and options.
+
+2. In the meal prep template, the pack method is always fixed, while the other steps:
+setup, choose base and protein, cook, and apply seasoning vary based on the template.
+
+3. To allow a double seasoning option, we would add another question and switch statement,
+and allow MealPrepTemplate to take up to two seasonings as parameters.
+
+4. To add a new template, like Grain Bowl, create a new class that implements MealPrepTemplate,
+and then add it to the switch statement and options.
